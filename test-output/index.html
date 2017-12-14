@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Precision\AppData\Local\Temp\testng-eclipse-2042276683\testng-customsuite.xml</span>
+                    <span>C:\Users\Precision\AppData\Local\Temp\testng-eclipse-818510709\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -124,6 +124,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ApiTest.ServiceTest" hash-for-method="testLoginEndPoint">testLoginEndPoint</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ApiTest.ServiceTest" hash-for-method="testSearchEndpoint">testSearchEndpoint</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
@@ -147,9 +152,11 @@
                   <a name="testUpdateIdEndpoint">
                   </a> <!-- testUpdateIdEndpoint -->
                   <span class="method-name">testUpdateIdEndpoint</span>
-                  <div class="stack-trace">java.util.NoSuchElementException
-	at java.util.StringTokenizer.nextToken(Unknown Source)
-	at ApiTest.ServiceTest.testUpdateIdEndpoint(ServiceTest.java:146)
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [38] but found [28],
+	Incorrect data format: dan@oprqu.test	last_name	Ankemah
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at ApiTest.ServiceTest.testUpdateIdEndpoint(ServiceTest.java:219)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -201,12 +208,19 @@
                   <span class="method-name">testLoginEndPoint</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchEndpoint">
+                  </a> <!-- testSearchEndpoint -->
+                  <span class="method-name">testSearchEndpoint</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Precision\AppData\Local\Temp\testng-eclipse-2042276683\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Precision\AppData\Local\Temp\testng-eclipse-818510709\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -255,19 +269,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCreateUsersEndpoint')
 data.setCell(0, 2, 'ApiTest.ServiceTest')
-data.setCell(0, 3, 9011);
+data.setCell(0, 3, 8858);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testLoginEndPoint')
 data.setCell(1, 2, 'ApiTest.ServiceTest')
-data.setCell(1, 3, 1763);
+data.setCell(1, 3, 1579);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testUpdateIdEndpoint')
 data.setCell(2, 2, 'ApiTest.ServiceTest')
-data.setCell(2, 3, 829);
+data.setCell(2, 3, 899);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSearchEndpoint')
+data.setCell(3, 2, 'ApiTest.ServiceTest')
+data.setCell(3, 3, 308);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -305,13 +323,17 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCreateUsersEndpoint</span>
-                <span class="method-start">1767 ms</span>
+                <span class="method-start">1581 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testUpdateIdEndpoint</span>
-                <span class="method-start">10780 ms</span>
+                <span class="method-start">10440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSearchEndpoint</span>
+                <span class="method-start">11342 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

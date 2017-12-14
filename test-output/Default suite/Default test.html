@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 13 20:47:12 EST 2017</td>
+<td>Started on:</td><td>Thu Dec 14 09:21:28 EST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11627 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11665 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,9 +76,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='ApiTest.ServiceTest.testUpdateIdEndpoint()'><b>testUpdateIdEndpoint</b><br>Test class: ApiTest.ServiceTest</td>
-<td><div><pre>java.util.NoSuchElementException
-	at java.util.StringTokenizer.nextToken(Unknown Source)
-	at ApiTest.ServiceTest.testUpdateIdEndpoint(ServiceTest.java:146)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [38] but found [28],
+	Incorrect data format: dan@oprqu.test	last_name	Ankemah
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at ApiTest.ServiceTest.testUpdateIdEndpoint(ServiceTest.java:219)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -104,10 +106,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2099932844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2099932844'><pre>java.util.NoSuchElementException
-	at java.util.StringTokenizer.nextToken(Unknown Source)
-	at ApiTest.ServiceTest.testUpdateIdEndpoint(ServiceTest.java:146)
+</pre></div><a href='#' onClick='toggleBox("stack-trace600199331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace600199331'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [38] but found [28],
+	Incorrect data format: dan@oprqu.test	last_name	Ankemah
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at ApiTest.ServiceTest.testUpdateIdEndpoint(ServiceTest.java:219)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -135,7 +139,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>ApiTest.ServiceTest@68be2bc2</td></tr>
+<td>ApiTest.ServiceTest@d2cc05a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -147,13 +151,18 @@ function toggleAllBoxes() {
 <tr>
 <td title='ApiTest.ServiceTest.testCreateUsersEndpoint()'><b>testCreateUsersEndpoint</b><br>Test class: ApiTest.ServiceTest</td>
 <td></td>
-<td>9</td>
-<td>ApiTest.ServiceTest@68be2bc2</td></tr>
+<td>8</td>
+<td>ApiTest.ServiceTest@d2cc05a</td></tr>
 <tr>
 <td title='ApiTest.ServiceTest.testLoginEndPoint()'><b>testLoginEndPoint</b><br>Test class: ApiTest.ServiceTest</td>
 <td></td>
 <td>1</td>
-<td>ApiTest.ServiceTest@68be2bc2</td></tr>
+<td>ApiTest.ServiceTest@d2cc05a</td></tr>
+<tr>
+<td title='ApiTest.ServiceTest.testSearchEndpoint()'><b>testSearchEndpoint</b><br>Test class: ApiTest.ServiceTest</td>
+<td></td>
+<td>0</td>
+<td>ApiTest.ServiceTest@d2cc05a</td></tr>
 </table><p>
 </body>
 </html>

@@ -9,13 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,627</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,665</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ApiTest.ServiceTest</td><td><a href="#m0">testUpdateIdEndpoint</a></td><td rowspan="1">1513216043738</td><td rowspan="1">829</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">ApiTest.ServiceTest</td><td><a href="#m1">testCreateUsersEndpoint</a></td><td rowspan="1">1513216034725</td><td rowspan="1">9011</td></tr><tr class="passedeven"><td><a href="#m2">testLoginEndPoint</a></td><td rowspan="1">1513216032958</td><td rowspan="1">1763</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ApiTest.ServiceTest</td><td><a href="#m0">testUpdateIdEndpoint</a></td><td rowspan="1">1513261299318</td><td rowspan="1">899</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">ApiTest.ServiceTest</td><td><a href="#m1">testCreateUsersEndpoint</a></td><td rowspan="1">1513261290459</td><td rowspan="1">8858</td></tr><tr class="passedeven"><td><a href="#m2">testLoginEndPoint</a></td><td rowspan="1">1513261288878</td><td rowspan="1">1579</td></tr><tr class="passedeven"><td><a href="#m3">testSearchEndpoint</a></td><td rowspan="1">1513261300220</td><td rowspan="1">308</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">ApiTest.ServiceTest#testUpdateIdEndpoint</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.util.NoSuchElementException
-	at java.util.StringTokenizer.nextToken(Unknown Source)
-	at ApiTest.ServiceTest.testUpdateIdEndpoint(ServiceTest.java:146)
+<h2>Default test</h2><h3 id="m0">ApiTest.ServiceTest#testUpdateIdEndpoint</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [38] but found [28],
+	Incorrect data format: dan@oprqu.test	last_name	Ankemah
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at ApiTest.ServiceTest.testUpdateIdEndpoint(ServiceTest.java:219)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -44,5 +46,6 @@
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">ApiTest.ServiceTest#testCreateUsersEndpoint</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">ApiTest.ServiceTest#testLoginEndPoint</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ApiTest.ServiceTest#testSearchEndpoint</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

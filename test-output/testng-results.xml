@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11627" started-at="2017-12-14T01:47:12Z" finished-at="2017-12-14T01:47:24Z">
+  <suite name="Default suite" duration-ms="11665" started-at="2017-12-14T14:21:28Z" finished-at="2017-12-14T14:21:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11627" started-at="2017-12-14T01:47:12Z" finished-at="2017-12-14T01:47:24Z">
+    <test name="Default test" duration-ms="11665" started-at="2017-12-14T14:21:28Z" finished-at="2017-12-14T14:21:40Z">
       <class name="ApiTest.ServiceTest">
-        <test-method status="PASS" signature="testLoginEndPoint()[pri:1, instance:ApiTest.ServiceTest@68be2bc2]" name="testLoginEndPoint" duration-ms="1763" started-at="2017-12-13T20:47:12Z" finished-at="2017-12-13T20:47:14Z">
+        <test-method status="PASS" signature="testLoginEndPoint()[pri:1, instance:ApiTest.ServiceTest@d2cc05a]" name="testLoginEndPoint" duration-ms="1579" started-at="2017-12-14T09:21:28Z" finished-at="2017-12-14T09:21:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginEndPoint -->
-        <test-method status="PASS" signature="testCreateUsersEndpoint()[pri:2, instance:ApiTest.ServiceTest@68be2bc2]" name="testCreateUsersEndpoint" duration-ms="9011" started-at="2017-12-13T20:47:14Z" finished-at="2017-12-13T20:47:23Z">
+        <test-method status="PASS" signature="testCreateUsersEndpoint()[pri:2, instance:ApiTest.ServiceTest@d2cc05a]" name="testCreateUsersEndpoint" duration-ms="8858" started-at="2017-12-14T09:21:30Z" finished-at="2017-12-14T09:21:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUsersEndpoint -->
-        <test-method status="FAIL" signature="testUpdateIdEndpoint()[pri:3, instance:ApiTest.ServiceTest@68be2bc2]" name="testUpdateIdEndpoint" duration-ms="829" started-at="2017-12-13T20:47:23Z" finished-at="2017-12-13T20:47:24Z">
-          <exception class="java.util.NoSuchElementException">
+        <test-method status="FAIL" signature="testUpdateIdEndpoint()[pri:3, instance:ApiTest.ServiceTest@d2cc05a]" name="testUpdateIdEndpoint" duration-ms="899" started-at="2017-12-14T09:21:39Z" finished-at="2017-12-14T09:21:40Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	expected [38] but found [28],
+	Incorrect data format: dan@oprqu.test	last_name	Ankemah]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException
-	at java.util.StringTokenizer.nextToken(Unknown Source)
-	at ApiTest.ServiceTest.testUpdateIdEndpoint(ServiceTest.java:146)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	expected [38] but found [28],
+	Incorrect data format: dan@oprqu.test	last_name	Ankemah
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at ApiTest.ServiceTest.testUpdateIdEndpoint(ServiceTest.java:219)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -48,10 +55,14 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateIdEndpoint -->
+        <test-method status="PASS" signature="testSearchEndpoint()[pri:4, instance:ApiTest.ServiceTest@d2cc05a]" name="testSearchEndpoint" duration-ms="308" started-at="2017-12-14T09:21:40Z" finished-at="2017-12-14T09:21:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchEndpoint -->
       </class> <!-- ApiTest.ServiceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
